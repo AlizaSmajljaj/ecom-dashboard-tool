@@ -1,0 +1,31 @@
+ID,Title,Brand,Category,Price,Stock,Rating
+1,Essence Mascara Lash Princess,Essence,beauty,9.99,99,2.56
+2,Eyeshadow Palette with Mirror,Glamour Beauty,beauty,19.99,34,2.86
+3,Powder Canister,Velvet Touch,beauty,14.99,89,4.64
+4,Red Lipstick,Chic Cosmetics,beauty,12.99,91,4.36
+5,Red Nail Polish,Nail Couture,beauty,8.99,79,4.32
+6,Calvin Klein CK One,Calvin Klein,fragrances,49.99,29,4.37
+7,Chanel Coco Noir Eau De,Chanel,fragrances,129.99,58,4.26
+8,Dior J'adore,Dior,fragrances,89.99,98,3.8
+9,Dolce Shine Eau de,Dolce & Gabbana,fragrances,69.99,4,3.96
+10,Gucci Bloom Eau de,Gucci,fragrances,79.99,91,2.74
+11,Annibale Colombo Bed,Annibale Colombo,furniture,1899.99,88,4.77
+12,Annibale Colombo Sofa,Annibale Colombo,furniture,2499.99,60,3.92
+13,Bedside Table African Cherry,Furniture Co.,furniture,299.99,64,2.87
+14,Knoll Saarinen Executive Conference Chair,Knoll,furniture,499.99,26,4.88
+15,Wooden Bathroom Sink With Mirror,Bath Trends,furniture,799.99,7,3.59
+16,Apple,N/A,groceries,1.99,8,4.19
+17,Beef Steak,N/A,groceries,12.99,86,4.47
+18,Cat Food,N/A,groceries,8.99,46,3.13
+19,Chicken Meat,N/A,groceries,9.99,97,3.19
+20,Cooking Oil,N/A,groceries,4.99,10,4.8
+21,Cucumber,N/A,groceries,1.49,84,4.07
+22,Dog Food,N/A,groceries,10.99,71,4.55
+23,Eggs,N/A,groceries,2.99,9,2.53
+24,Fish Steak,N/A,groceries,14.99,74,3.78
+25,Green Bell Pepper,N/A,groceries,1.29,33,3.25
+26,Green Chili Pepper,N/A,groceries,0.99,3,3.66
+27,Honey Jar,N/A,groceries,6.99,34,3.97
+28,Ice Cream,N/A,groceries,5.49,27,3.39
+29,Juice,N/A,groceries,3.99,50,3.94
+30,Kiwi,N/A,groceries,2.49,99,4.93
