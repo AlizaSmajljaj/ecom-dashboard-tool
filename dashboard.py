@@ -1,9 +1,41 @@
+import argparse
 import requests
 import csv
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from datetime import datetime
 
+
+def main():
+    parser= argparse.ArgumentParser(description='eCommerce Dashboars Tool: Gnerate reports and invoices from product data.')
+    parser.add_argument('--csv', type=str, help='Generate a csv report with the given filename (e.g., "report.csv")')
+    parser.add_argument('--product-id',type=int, default=1, help='The product ID to generate an invoice for (use with --invoice). Default: 1')
+    parser.add_argument('--invoice',action='store_true',help='Generate an invoice pdf')
+    parser.add_argument('--all',action='store_true',help='Generate both the CSV report and an invoice (Default behaviour)')
+    args=parser.parse_args()
+    
+    products = fetch_products()
+    
+    if args.csv:
+        export_to_csv(products, filename=args.csv)
+    
+    if args.invoice:
+        target_product=None
+        for product in products:
+            if product['id'] == args.product_id:
+                target_product = product
+                break
+        
+        if target_product:
+            generate_invoice(target_product, filename=f"invoice_{args.product_id}.pdf")
+        else:
+            print(f"Error: Product with id {args.product_id} not found!")
+    
+    if args.all or (not args.csv and not args.invoice):
+        export_to_csv(products)
+        generate_invoice(products[0])
+        
+    
 def fetch_products():
     print("Fetching products from API..")
     url="https://dummyjson.com/products"
@@ -74,6 +106,7 @@ def generate_invoice(product, filename='invoice.pdf'):
     print("Invoice generated successfully!")
 
 if __name__ == '__main__':
-    products=fetch_products()
-    export_to_csv(products)    
-    generate_invoice(products[0])
+    #products=fetch_products()
+    #export_to_csv(products)    
+    #generate_invoice(products[0])
+    main()
