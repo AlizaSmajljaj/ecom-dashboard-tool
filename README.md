@@ -4,7 +4,7 @@ A web application to manage product data, generate invoices, and export reports.
 
 ## 🚀 Live Demo
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ecom-dashboard-tool-simplified.streamlit.app/)
 
 ## 🛠️ Local Development
 
